@@ -64,9 +64,9 @@ const sessionOptions={
         httpOnly: true,
     }
 }
-// app.get("/",(req,res)=>{
-//     res.send("hi");
-// });
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+});
 
 
 
