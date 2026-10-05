@@ -23,7 +23,7 @@ router.route("/")
 
 
 //new route
-router.get("/new",isLoggedIn, listingController.renderNewForm);
+router.get("/create",isLoggedIn, listingController.renderNewForm);  //*
 
 router.route("/:id")
 .get( wrapAsync(listingController.showListings))   //Show route
